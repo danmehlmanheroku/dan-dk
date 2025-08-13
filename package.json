@@ -1,0 +1,17 @@
+{
+  "name": "p5-dk",
+  "version": "1.0.0",
+  "description": "Donkey Kong-like p5.js game with responsive design and synthesized audio, deployable to Heroku.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": ""
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "compression": "^1.7.4"
+  }
+}
