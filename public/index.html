@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+  <title>Barrel Bash! — a p5.js Platformer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- p5 core + sound from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/addons/p5.sound.min.js"></script>
+</head>
+<body>
+  <div id="game-root">
+    <div id="hud">
+      <div class="hud-left">
+        <span id="score">Score: 0</span>
+        <span id="level">Level: 1</span>
+        <span id="lives">Lives: 3</span>
+      </div>
+      <div class="hud-right">
+        <button id="muteBtn" aria-label="Toggle sound">🔊</button>
+        <button id="pauseBtn" aria-label="Pause">⏸️</button>
+      </div>
+    </div>
+
+    <div id="mobile-controls" class="hidden">
+      <button id="btn-left" aria-label="Left">◀</button>
+      <button id="btn-right" aria-label="Right">▶</button>
+      <button id="btn-jump" aria-label="Jump">⤒</button>
+    </div>
+
+    <div id="tip">Tap or click to enable sound 🎵</div>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
